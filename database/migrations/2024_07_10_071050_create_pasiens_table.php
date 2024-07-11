@@ -33,6 +33,11 @@ return new class extends Migration
             $table->string('rasa_sakit');
             $table->string('pernapasan');
             $table->string('keamanan');
+
+            // Nursing Diagnosa
+            $table->string('physiological_injury');
+            $table->string('physiological_injury_minor_a');
+
             $table->timestamps();
         });
     }

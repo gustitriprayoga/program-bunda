@@ -108,7 +108,8 @@
                 <div class="form-group mb-2">
                     <label for="riwayat_alergi">Medical History First</label>
                     <select name="riwayat_alergi" id="riwayat_alergi" class="form-control">
-                        <option value="Asses the presence of a history of hypertension">Asses the presence of a history of hypertension</option>
+                        <option value="Asses the presence of a history of hypertension">Asses the presence of a history of
+                            hypertension</option>
                         <option value="Heart Disease">Heart Disease</option>
                         <option value="Kidney Disease">Kidney Disease</option>
                         <option value="Stroke">Stroke</option>
@@ -121,7 +122,9 @@
                     <select name="riwayat_penyakit_keluarga" id="riwayat_penyakit_keluarga" class="form-control">
                         <option value="Family History of Hypertension">Family History of Hypertension</option>
                         <option value="Family History of Metabolic Disease">Family History of Metabolic Disease</option>
-                        <option value="Family There Are Infectious Disease Such as Tuberculosis, Hiv, Urinary Tract Infectious">Family There Are Infectious Disease Such as Tuberculosis, Hiv, Urinary Tract Infectious</option>
+                        <option
+                            value="Family There Are Infectious Disease Such as Tuberculosis, Hiv, Urinary Tract Infectious">
+                            Family There Are Infectious Disease Such as Tuberculosis, Hiv, Urinary Tract Infectious</option>
                         <option value="Family History of Diabetes Mellitus">Family History of Diabetes Mellitus</option>
                         <option value="Family History of Asthma">Family History of Asthma</option>
                         <option value="Family History of Other Disease">Family History of Other Disease</option>
@@ -169,7 +172,8 @@
                 <div class="form-group mb-2">
                     <label for="eliminasi"> Elimination </label>
                     <select name="eliminasi" id="eliminasi" class="form-control">
-                        <option value="Renal impariment/history of renal impairmen">Renal impariment/history of renal impairmen</option>
+                        <option value="Renal impariment/history of renal impairmen">Renal impariment/history of renal
+                            impairmen</option>
                         <option value="Urine insecurity">Urine insecurity</option>
                         <option value="Little urine">Little urine</option>
                     </select>
@@ -223,12 +227,12 @@
         {{-- NURSING --}}
         <div class="card custom-card">
             <div class="card-header">
-                <h4>NURSING DIAGNOSIS</h4>
+                <h4>INURSING DIAGNOSIS</h4>
             </div>
             <div class="card-body">
                 <div class="form-group mb-2">
-                    <label for="physiological_injury"> Physiological Injury Agents</label>
-                    <select name="physiological_injury" id="physiological_injury">
+                    <label for="physiological_injury">1. Physiological Injury Agents</label>
+                    <select name="physiological_injury" id="physiological_injury" class="form-control">
                         <option value="Inflammatory">Inflammatory</option>
                         <option value="Ischemia">Ischemia</option>
                         <option value="Neoplasm">Neoplasm</option>
@@ -237,14 +241,302 @@
             </div>
         </div>
 
+        <hr>
+        <h6>Limitations Characteristic</h6>
+        <hr>
         <div class="card card-custom">
             <div class="card-body">
-                <p>Limitations Characteristic</p>
+
+                <p> Minor Criteria </p>
                 <div class="form-group mb-2">
-                    <label for="physiological_injury_minor_a"> </label>
+                    <label for="physiological_injury_minor_a">A. Subjective </label>
+                    <select name="physiological_injury_minor_a" id="physiological_injury_minor_a" class="form-control">
+                        <option value="Complaining of pain">Complaining of pain</option>
+                    </select>
+                </div>
+                <div class="form-group mb-2">
+                    <label for="physiological_injury_minor_b">B. Objective</label>
+                    <select name="physiological_injury_minor_b" id="physiological_injury_minor_b" class="form-control">
+                        <option value="Grimacing">Grimacing</option>
+                        <option value="Be protective (ex: alert, pain avoidance position)">Be protective (ex: alert, pain
+                            avoidance position)</option>
+                        <option value="Restless">Restless</option>
+                        <option value="Increased pulse frequency">Increased pulse frequency</option>
+                        <option value="Difficulty sleeping">Difficulty sleeping</option>
+                    </select>
+                </div>
+                <p> Minor Criteria </p>
+
+                <div class="form-group mb-2">
+                    <label for="physiological_injury_minor_a_2">A. Subjective</label>
+                    <select name="physiological_injury_minor_a_2" id="physiological_injury_minor_a_2"
+                        class="form-control">
+                        <option value="There aren't any">There aren't any</option>
+                    </select>
+                </div>
+                <div class="form-group mb-2">
+                    <label for="physiological_injury_minor_b_2">B. Objective</label>
+                    <select name="physiological_injury_minor_b_2" id="physiological_injury_minor_b_2"
+                        class="form-control">
+                        <option value="Increased blood pressure">Increased blood pressure</option>
+                        <option value="Breathing pattern changes">Breathing pattern changes</option>
+                        <option value="Appetite changes">Appetite changes</option>
+                        <option value="Disrupted thought process">Disrupted thought process</option>
+                        <option value="Withdraw">Withdraw</option>
+                        <option value="Focus on yourself">Focus on yourself</option>
+                        <option value="Diaphoresis">Diaphoresis</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <h6>Related Clinical Donditions</h6>
+        <hr>
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="form-group mb-2">
+                    <label for="related_clinical_conditions"> Related Clinical Conditions</label>
+                    <select name="related_clinical_conditions" id="related_clinical_conditions" class="form-control">
+                        <option value="Surgical conditions">Surgical conditions</option>
+                        <option value="Traumatic injury">Traumatic injury</option>
+                        <option value="Infection">Infection</option>
+                        <option value="Acute coronary syndrome">Acute coronary syndrome</option>
+                        <option value="Glaucoma">Glaucoma</option>
+                    </select>
                 </div>
             </div>
         </div>
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="form-group mb-2">
+                    <a for="ineffective">2.Ineffective peripheral perfusion </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="form-group mb-2">
+                    <a for="">Subjective</a>
+                    <select name="ineffective_subjective" id="ineffective_subjective" class="form-control">
+                        <option value="not available">not available</option>
+                    </select>
+                </div>
+                <div class="form-group mb-2">
+                    <a for="ineffective_objective">Objective</a>
+                    <select name="ineffective_objective" id="ineffective_objective" class="form-control">
+                        <option value="Capillary refill >3 seconds">Capillary refill >3 seconds</option>
+                        <option value="Peripheral pulse decreased or not palpable">Peripheral pulse decreased or not palpable</option>
+                        <option value="Pale skin colour">Pale skin colour</option>
+                        <option value="Decreased skin turgor">Decreased skin turgor</option>
+                    </select>
+                </div>
+                <p class="mb-2"> <b>Minor Criteria </b></p>
+
+                <div class="form-group mb-2">
+                    <label for="ineffective_objective_a">1. Subjective</label>
+                    <select name="ineffective_objective_a" id="ineffective_objective_a"
+                        class="form-control">
+                        <option value="Edema">Paraesthesia</option>
+                        <option value="Extremity pain (intermittent claudication)">Extremity pain (intermittent claudication)</option>
+                    </select>
+                </div>
+                <div class="form-group mb-2">
+                    <label for="ineffective_objective_b">2. Subjective</label>
+                    <select name="ineffective_objective_b" id="ineffective_objective_b"
+                        class="form-control">
+                        <option value="Edema">Edema</option>
+                        <option value="Slow wound healing">Slow wound healing</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-2">
+                    <label for="associated_clinical_conditions_2">2. Subjective</label>
+                    <select name="associated_clinical_conditions_2" id="associated_clinical_conditions_2"
+                        class="form-control">
+                        <option value="Thrombophlebitis">Thrombophlebitis</option>
+                        <option value="Diabetes mellitus">Diabetes mellitus</option>
+                        <option value="Anemia">Anemia</option>
+                        <option value="Congestive heart failure">Congestive heart failure</option>
+                        <option value="Arterial thrombosis">Arterial thrombosis</option>
+                        <option value="Varicose veins">Varicose veins</option>
+                        <option value="Deep vein thrombosis">Deep vein thrombosis</option>
+                        <option value="Compartment syndrome">Compartment syndrome</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="form-group mb-2">
+                    <a for="Hypervolemia">3.	Hypervolemia</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h6>Limitations Characteristic</h6>
+        <hr>
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <p> Major Criteria </p>
+                <div class="form-group mb-2">
+                    <label for="Hypervolemia_subjective">1. Subjective </label>
+                    <select name="Hypervolemia_subjective" id="Hypervolemia_subjective" class="form-control">
+                        <option value="Orthopnoea">Orthopnoea</option>
+                        <option value="Dyspnoea">Dyspnoea</option>
+                        <option value="Paroxysmal nocturnal">Paroxysmal nocturnal</option>
+                        <option value="Dyspnoea (PND)">Dyspnoea (PND)</option>
+                    </select>
+                </div>
+                <div class="form-group mb-2">
+                    <label for="Hypervolemia_objective">B. Objective</label>
+                    <select name="Hypervolemia_objective" id="Hypervolemia_objective" class="form-control">
+                        <option value="Grimacing">Grimacing</option>
+                        <option value="Weight gain in a short time">Weight gain in a short time</option>
+                        <option value="Jugular venous pressure (JVP) and/or Central Venous pressure (CVP) increased Positive hepatojugular reflex">Jugular venous pressure (JVP) and/or Central Venous pressure (CVP) increased Positive hepatojugular reflex</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <p> Minor Criteria </p>
+                <div class="form-group mb-2">
+                    <label for="Hypervolemia_subjective_1">1. Subjective </label>
+                    <select name="Hypervolemia_subjective_1" id="Hypervolemia_subjective_1" class="form-control">
+                        <option value="not available">not available</option>
+                    </select>
+                </div>
+                <div class="form-group mb-2">
+                    <label for="Hypervolemia_objective_1">B. Objective</label>
+                    <select name="Hypervolemia_objective_1" id="Hypervolemia_objective_1" class="form-control">
+                        <option value="Grimacing">Grimacing</option>
+                        <option value="Jugular venous distention">Jugular venous distention</option>
+                        <option value="Additional breath sounds">Additional breath sounds</option>
+                        <option value="Hepatomegaly">Hepatomegaly</option>
+                        <option value="Hb/Ht levels go down">Hb/Ht levels go down</option>
+                        <option value="Oliguria">Oliguria</option>
+                        <option value="Intake is more than output">Intake is more than output</option>
+                        <option value="Lung congestion">Lung congestion</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="form-group mb-2">
+                    <label for="Hypervolemia_limitations">Characteristic limitation</label>
+                    <select name="Hypervolemia_limitations" id="Hypervolemia_limitations" class="form-control">
+                        <option value="Associated clinical conditions">Associated clinical conditions</option>
+                        <option value="Kidney disease: acute/chronic renal failure, nephrotic syndrome">Kidney disease: acute/chronic renal failure, nephrotic syndrome</option>
+                        <option value="Hypoalbuminemia">Hypoalbuminemia</option>
+                        <option value="Congestive heart failure">Congestive heart failure</option>
+                        <option value="Hormonal disorders">Hormonal disorders</option>
+                        <option value="Liver disease (eg cirrhosis, ascites, liver cancer)">Liver disease (eg cirrhosis, ascites, liver cancer)</option>
+                        <option value="Peripheral venous disease (eg varicose veins, venous thrombus, phlebitis)">Peripheral venous disease (eg varicose veins, venous thrombus, phlebitis)</option>
+                        <option value="Immobility">Peripheral venous disease (eg varicose veins, venous thrombus, phlebitis)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="form-group mb-2"></div>
+                    <a for="Anxiety">4. Anxiety</a>
+                    <p>Cause: lack of exposure to information</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <h6>Characteristic Limitations:</h6>
+        <hr>
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <p> Major Criteria </p>
+                <div class="form-group mb-2">
+                    <label for="Anxiety_subjective">1. Subjective </label>
+                    <select name="Anxiety_subjective" id="Anxiety_subjective" class="form-control">
+                        <option value="Feeling confused">Feeling confused</option>
+                        <option value="Feeling worried about the consequences of the conditions faced">Feeling worried about the consequences of the conditions faced</option>
+                        <option value="It's hard to concentrate">It's hard to concentrate</option>
+                    </select>
+                </div>
+                <div class="form-group mb-2">
+                    <label for="Anxiety_objective">B. Objective</label>
+                    <select name="Anxiety_objective" id="Anxiety_objective" class="form-control">
+                        <option value="Looking restless">Looking restless</option>
+                        <option value="Looks tense">Looks tense</option>
+                        <option value="Hard to sleep">Hard to sleep</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card card-custom">
+            <div class="card-body">
+                <p> Minor Criteria </p>
+                <div class="form-group mb-2">
+                    <label for="Anxiety_subjective_1">1. Subjective </label>
+                    <select name="Anxiety_subjective_1" id="Anxiety_subjective_1" class="form-control">
+                        <option value="Complaining dizzy">Complaining dizzy</option>
+                        <option value="Anorexia">Anorexia</option>
+                        <option value="Palpitations">Palpitations</option>
+                        <option value="Feeling helpless">Feeling helpless</option>
+                    </select>
+                </div>
+                <div class="form-group mb-2">
+                    <label for="Anxiety_objective_1">B. Objective</label>
+                    <select name="Anxiety_objective_1" id="Anxiety_objective_1" class="form-control">
+                        <option value="Increased respiratory rate">Increased respiratory rate</option>
+                        <option value="Increased pulse rate">Increased pulse rate</option>
+                        <option value="Increased blood pressure">Increased blood pressure</option>
+                        <option value="Diaphoresis">Diaphoresis</option>
+                        <option value="Tremor">Tremor</option>
+                        <option value="Face looks pale">Face looks pale</option>
+                        <option value="Vibrating voice">Vibrating voice</option>
+                        <option value="Bad eye contact">Bad eye contact</option>
+                        <option value="Frequent urination">Frequent urination</option>
+                        <option value="Oriented to the past">Oriented to the past</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="form-group mb-2">
+                    <label for="Anxiety_related_condition">Related Clinical Conditions</label>
+                    <select name="Anxiety_related_condition" id="Anxiety_related_condition" class="form-control">
+                        <option value="Progressive chronic disease (eg cancer, autoimmune disease)">Progressive chronic disease (eg cancer, autoimmune disease)</option>
+                        <option value="Acute illness">Acute illness</option>
+                        <option value="Hospitalization">Hospitalization</option>
+                        <option value="Operation plan">Operation plan</option>
+                        <option value="The condition of the disease diagnosis is not clear">The condition of the disease diagnosis is not clear</option>
+                        <option value="Neurological disease">Neurological disease</option>
+                        <option value="Growth stage">Growth stage</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="form-group mb-2"></div>
+                    <a for="Anxiety">4. Anxiety</a>
+                    <p>Cause: lack of exposure to information</p>
+                </div>
+            </div>
+        </div>
+
+
     </form>
 
 

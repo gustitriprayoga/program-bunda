@@ -530,12 +530,40 @@
         <div class="card card-custom">
             <div class="card-body">
                 <div class="form-group mb-2"></div>
-                    <a for="Anxiety">4. Anxiety</a>
-                    <p>Cause: lack of exposure to information</p>
+                    <a for="Risk">5.	Risk for decreased cardiac output related to changes in afterload</a>
+                    <p>Goal: After nursing actions are expected to increase cardiac output</p>
                 </div>
             </div>
         </div>
 
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="form-group mb-2">
+                    <label for="risk_outcome_criteria">Outcome criteria: cardiac output </label>
+                    <select name="risk_outcome_criteria" id="risk_outcome_criteria" class="form-control">
+                        <option value="Vital signs within normal range">Vital signs within normal range</option>
+                        <option value="Strong pulse">Strong pulse</option>
+                        <option value="The patient does not complain of fatigue">The patient does not complain of fatigue</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="form-group mb-2">
+                    <label for="risk_outcome_criteria">Action plan: </label>
+                    <select name="risk_outcome_criteria" id="risk_outcome_criteria" class="form-control">
+                        <option value="Dyspnoea">Dyspnoea</option>
+                        <option value="Fatigue">Fatigue</option>
+                        <option value="Edema">Edema</option>
+                        <option value="Orthopnoea">Orthopnoea</option>
+                        <option value="Paroxysmal">Paroxysmal</option>
+                        <option value="CVP increase">CVP increase</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
     </form>
 

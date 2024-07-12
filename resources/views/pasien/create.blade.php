@@ -225,11 +225,11 @@
 
 
         {{-- NURSING --}}
-        <div class="card custom-card">
-            <div class="card-header">
+        <div class="card custom-card bg-primary">
+            <div class="card-header  bg-primary">
                 <h4>INURSING DIAGNOSIS</h4>
             </div>
-            <div class="card-body">
+            <div class="card-body ">
                 <div class="form-group mb-2">
                     <label for="physiological_injury">1. Physiological Injury Agents</label>
                     <select name="physiological_injury" id="physiological_injury" class="form-control">
@@ -308,7 +308,7 @@
             </div>
         </div>
 
-        <div class="card card-custom">
+        <div class="card card-custom  bg-primary">
             <div class="card-body">
                 <div class="form-group mb-2">
                     <a for="ineffective">2.Ineffective peripheral perfusion </a>
@@ -369,7 +369,7 @@
             </div>
         </div>
 
-        <div class="card card-custom">
+        <div class="card card-custom  bg-primary">
             <div class="card-body">
                 <div class="form-group mb-2">
                     <a for="Hypervolemia">3.	Hypervolemia</a>
@@ -446,7 +446,7 @@
             </div>
         </div>
 
-        <div class="card card-custom">
+        <div class="card card-custom  bg-primary">
             <div class="card-body">
                 <div class="form-group mb-2"></div>
                     <a for="Anxiety">4. Anxiety</a>
@@ -527,7 +527,7 @@
             </div>
         </div>
 
-        <div class="card card-custom">
+        <div class="card card-custom bg-primary">
             <div class="card-body">
                 <div class="form-group mb-2"></div>
                     <a for="Risk">5.	Risk for decreased cardiac output related to changes in afterload</a>

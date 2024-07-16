@@ -72,8 +72,33 @@ class PasienController extends Controller
             'related_clinical_conditions' => 'required|array',  // Validate as array
 
             // 2.Ineffective peripheral perfusion
+            'ineffective_subjective' => 'required|array',  // Validate as array
+            'ineffective_objective' => 'required|array',  // Validate as array
+            'ineffective_objective_a' => 'required|array',  // Validate as array
+            'ineffective_objective_b' => 'required|array',  // Validate as array
+            'associated_clinical_conditions_2' => 'required|array',  // Validate as array
 
-            
+            // 3 Hypervolmia
+
+            'Hypervolemia_subjective' => 'required',
+            'Hypervolemia_objective' => 'required',
+            'Hypervolemia_subjective_1' => 'required',
+            'Hypervolemia_objective_1' => 'required',
+            'Hypervolemia_limitations' => 'required',
+
+            // 4 Anxiety
+            'Anxiety_subjective' => 'required',
+            'Anxiety_objective' => 'required',
+            'Anxiety_subjective_1' => 'required',
+            'Anxiety_objective_1' => 'required',
+            'Anxiety_related_conditions' => 'required',
+
+            // 5 Risk
+
+
+
+
+
         ]);
 
         // Join array into a string for storage, if necessary
@@ -89,6 +114,10 @@ class PasienController extends Controller
         $rasa_sakit = implode(', ', $request->input('rasa_sakit'));
         $pernapasan = implode(', ', $request->input('pernapasan'));
         $keamanan = implode(', ', $request->input('keamanan'));
+        $ineffective_subjective = implode(', ', $request->input('ineffective_subjective'));
+        $ineffective_objective = implode(', ', $request->input('ineffective_objective'));
+        $ineffective_objective_a = implode(', ', $request->input('ineffective_objective_a'));
+        $ineffective_objective_b = implode(', ', $request->input('ineffective_objective_b'));
 
         // Inursing Diagnosis
         $physiological_injury = implode(', ', $request->input('physiological_injury'));
@@ -98,6 +127,29 @@ class PasienController extends Controller
         $physiological_injury_minor_b_2 = implode(', ', $request->input('physiological_injury_minor_b_2'));
         $related_clinical_conditions = implode(', ', $request->input('related_clinical_conditions'));
 
+
+        // 2.Ineffective peripheral perfusion
+
+        $ineffective_subjective = implode(', ', $request->input('ineffective_subjective'));
+        $ineffective_objective = implode(', ', $request->input('ineffective_objective'));
+        $ineffective_objective_a = implode(', ', $request->input('ineffective_objective_a'));
+        $ineffective_objective_b = implode(', ', $request->input('ineffective_objective_b'));
+
+        // 3 Hypervolmia
+        $Hypervolemia_subjective = implode(', ', $request->input('Hypervolemia_subjective'));
+        $Hypervolemia_objective = implode(', ', $request->input('Hypervolemia_objective'));
+        $Hypervolemia_subjective_1 = implode(', ', $request->input('Hypervolemia_subjective_1'));
+        $Hypervolemia_objective_1 = implode(', ', $request->input('Hypervolemia_objective_1'));
+        $Hypervolemia_limitations = implode(', ', $request->input('Hypervolemia_limitations'));
+
+        // 4 Anxiety
+        $Anxiety_subjective = implode(', ', $request->input('Anxiety_subjective'));
+        $Anxiety_objective = implode(', ', $request->input('Anxiety_objective'));
+        $Anxiety_subjective_1 = implode(', ', $request->input('Anxiety_subjective_1'));
+        $Anxiety_objective_1 = implode(', ', $request->input('Anxiety_objective_1'));
+        $Anxiety_related_condition = implode(', ', $request->input('Anxiety_related_condition'));
+
+        // 5 Risk
 
 
         // Store the data (adjust based on your storage logic)
@@ -129,6 +181,29 @@ class PasienController extends Controller
             'physiological_injury_minor_a_2' => $physiological_injury_minor_a_2,  // Store the complaints
             'physiological_injury_minor_b_2' => $physiological_injury_minor_b_2,  // Store the complaints
             'related_clinical_conditions' => $related_clinical_conditions,  // Store the complaints
+
+            // 2.Ineffective peripheral perfusion
+            'ineffective_subjective' => $ineffective_subjective,  // Store the complaints
+            'ineffective_objective' => $ineffective_objective,  // Store the complaints
+            'ineffective_objective_a' => $ineffective_objective_a,  // Store the complaints
+            'ineffective_objective_b' => $ineffective_objective_b,  // Store the complaints
+
+            // 3 Hypervolmia
+            'Hypervolemia_subjective' => $request->input('Hypervolemia_subjective'),
+            'Hypervolemia_objective' => $request->input('Hypervolemia_objective'),
+            'Hypervolemia_subjective_1' => $request->input('Hypervolemia_subjective_1'),
+            'Hypervolemia_objective_1' => $request->input('Hypervolemia_objective_1'),
+            'Hypervolemia_limitations' => $request->input('Hypervolemia_limitations'),
+
+            // 4 Anxiety
+            'Anxiety_subjective' => $request->input('Anxiety_subjective'),
+            'Anxiety_objective' => $request->input('Anxiety_objective'),
+            'Anxiety_subjective_1' => $request->input('Anxiety_subjective_1'),
+            'Anxiety_objective_1' => $request->input('Anxiety_objective_1'),
+            'Anxiety_related_condition' => $request->input('Anxiety_related_condition'),
+
+            // 5 Risk
+            'risk_related_conditions' => $request->input('risk_related_conditions'),
 
         ]);
 

@@ -925,53 +925,142 @@
 
         <div class="card card-custom">
             <div class="card-body">
-                <div class="form-group mb-2">
-                    <a for="">Subjective</a>
-                    <select name="ineffective_subjective" id="ineffective_subjective" class="form-control">
-                        <option value="not available">not available</option>
-                    </select>
-                </div>
-                <div class="form-group mb-2">
-                    <a for="ineffective_objective">Objective</a>
-                    <select name="ineffective_objective" id="ineffective_objective" class="form-control">
-                        <option value="Capillary refill >3 seconds">Capillary refill >3 seconds</option>
-                        <option value="Peripheral pulse decreased or not palpable">Peripheral pulse decreased or not
-                            palpable</option>
-                        <option value="Pale skin colour">Pale skin colour</option>
-                        <option value="Decreased skin turgor">Decreased skin turgor</option>
-                    </select>
-                </div>
-                <p class="mb-2"> <b>Minor Criteria </b></p>
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <div class="form-group mb-2">
+                            <label>Subjective</label>
+                            <div id="ineffective_subjective" class="d-flex flex-wrap">
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="ineffective_subjective[]" value="not available" id="ineffective_subjective_1">
+                                    <label class="form-check-label" for="ineffective_subjective_1">
+                                        not available
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="form-group mb-2">
-                    <label for="ineffective_objective_a">1. Subjective</label>
-                    <select name="ineffective_objective_a" id="ineffective_objective_a" class="form-control">
-                        <option value="Edema">Paraesthesia</option>
-                        <option value="Extremity pain (intermittent claudication)">Extremity pain (intermittent
-                            claudication)</option>
-                    </select>
-                </div>
-                <div class="form-group mb-2">
-                    <label for="ineffective_objective_b">2. Subjective</label>
-                    <select name="ineffective_objective_b" id="ineffective_objective_b" class="form-control">
-                        <option value="Edema">Edema</option>
-                        <option value="Slow wound healing">Slow wound healing</option>
-                    </select>
-                </div>
+                        <div class="form-group mb-2">
+                            <label>Objective</label>
+                            <div id="ineffective_objective" class="d-flex flex-wrap">
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="ineffective_objective[]" value="Capillary refill >3 seconds" id="ineffective_objective_1">
+                                    <label class="form-check-label" for="ineffective_objective_1">
+                                        Capillary refill >3 seconds
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="ineffective_objective[]" value="Peripheral pulse decreased or not palpable" id="ineffective_objective_2">
+                                    <label class="form-check-label" for="ineffective_objective_2">
+                                        Peripheral pulse decreased or not palpable
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="ineffective_objective[]" value="Pale skin colour" id="ineffective_objective_3">
+                                    <label class="form-check-label" for="ineffective_objective_3">
+                                        Pale skin colour
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="ineffective_objective[]" value="Decreased skin turgor" id="ineffective_objective_4">
+                                    <label class="form-check-label" for="ineffective_objective_4">
+                                        Decreased skin turgor
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="form-group mb-2">
-                    <label for="associated_clinical_conditions_2">2. Subjective</label>
-                    <select name="associated_clinical_conditions_2" id="associated_clinical_conditions_2"
-                        class="form-control">
-                        <option value="Thrombophlebitis">Thrombophlebitis</option>
-                        <option value="Diabetes mellitus">Diabetes mellitus</option>
-                        <option value="Anemia">Anemia</option>
-                        <option value="Congestive heart failure">Congestive heart failure</option>
-                        <option value="Arterial thrombosis">Arterial thrombosis</option>
-                        <option value="Varicose veins">Varicose veins</option>
-                        <option value="Deep vein thrombosis">Deep vein thrombosis</option>
-                        <option value="Compartment syndrome">Compartment syndrome</option>
-                    </select>
+                        <p class="mb-2"><b>Minor Criteria</b></p>
+
+                        <div class="form-group mb-2">
+                            <label for="ineffective_objective_a">1. Subjective</label>
+                            <div id="ineffective_objective_a" class="d-flex flex-wrap">
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="ineffective_objective_a[]" value="Paraesthesia" id="ineffective_objective_a_1">
+                                    <label class="form-check-label" for="ineffective_objective_a_1">
+                                        Paraesthesia
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="ineffective_objective_a[]" value="Extremity pain (intermittent claudication)" id="ineffective_objective_a_2">
+                                    <label class="form-check-label" for="ineffective_objective_a_2">
+                                        Extremity pain (intermittent claudication)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="ineffective_objective_b">2. Subjective</label>
+                            <div id="ineffective_objective_b" class="d-flex flex-wrap">
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="ineffective_objective_b[]" value="Edema" id="ineffective_objective_b_1">
+                                    <label class="form-check-label" for="ineffective_objective_b_1">
+                                        Edema
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="ineffective_objective_b[]" value="Slow wound healing" id="ineffective_objective_b_2">
+                                    <label class="form-check-label" for="ineffective_objective_b_2">
+                                        Slow wound healing
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="associated_clinical_conditions_2">2. Subjective</label>
+                            <div id="associated_clinical_conditions_2" class="d-flex flex-wrap">
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="associated_clinical_conditions_2[]" value="Thrombophlebitis" id="associated_clinical_conditions_2_1">
+                                    <label class="form-check-label" for="associated_clinical_conditions_2_1">
+                                        Thrombophlebitis
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="associated_clinical_conditions_2[]" value="Diabetes mellitus" id="associated_clinical_conditions_2_2">
+                                    <label class="form-check-label" for="associated_clinical_conditions_2_2">
+                                        Diabetes mellitus
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="associated_clinical_conditions_2[]" value="Anemia" id="associated_clinical_conditions_2_3">
+                                    <label class="form-check-label" for="associated_clinical_conditions_2_3">
+                                        Anemia
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="associated_clinical_conditions_2[]" value="Congestive heart failure" id="associated_clinical_conditions_2_4">
+                                    <label class="form-check-label" for="associated_clinical_conditions_2_4">
+                                        Congestive heart failure
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="associated_clinical_conditions_2[]" value="Arterial thrombosis" id="associated_clinical_conditions_2_5">
+                                    <label class="form-check-label" for="associated_clinical_conditions_2_5">
+                                        Arterial thrombosis
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="associated_clinical_conditions_2[]" value="Varicose veins" id="associated_clinical_conditions_2_6">
+                                    <label class="form-check-label" for="associated_clinical_conditions_2_6">
+                                        Varicose veins
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="associated_clinical_conditions_2[]" value="Deep vein thrombosis" id="associated_clinical_conditions_2_7">
+                                    <label class="form-check-label" for="associated_clinical_conditions_2_7">
+                                        Deep vein thrombosis
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="associated_clinical_conditions_2[]" value="Compartment syndrome" id="associated_clinical_conditions_2_8">
+                                    <label class="form-check-label" for="associated_clinical_conditions_2_8">
+                                        Compartment syndrome
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -988,77 +1077,199 @@
         <hr>
 
         <div class="card card-custom">
-            <div class="card-body">
-                <p> Major Criteria </p>
-                <div class="form-group mb-2">
-                    <label for="Hypervolemia_subjective">1. Subjective </label>
-                    <select name="Hypervolemia_subjective" id="Hypervolemia_subjective" class="form-control">
-                        <option value="Orthopnoea">Orthopnoea</option>
-                        <option value="Dyspnoea">Dyspnoea</option>
-                        <option value="Paroxysmal nocturnal">Paroxysmal nocturnal</option>
-                        <option value="Dyspnoea (PND)">Dyspnoea (PND)</option>
-                    </select>
+            <div class="card card-custom">
+                <div class="card-body">
+                    <p>Major Criteria</p>
+
+                    <div class="form-group mb-2">
+                        <label>1. Subjective</label>
+                        <div id="Hypervolemia_subjective" class="d-flex flex-wrap">
+                            <div class="form-check py-2 mx-2">
+                                <input class="form-check-input" type="checkbox" name="Hypervolemia_subjective[]" value="Orthopnoea" id="Hypervolemia_subjective_1">
+                                <label class="form-check-label" for="Hypervolemia_subjective_1">
+                                    Orthopnoea
+                                </label>
+                            </div>
+                            <div class="form-check py-2 mx-2">
+                                <input class="form-check-input" type="checkbox" name="Hypervolemia_subjective[]" value="Dyspnoea" id="Hypervolemia_subjective_2">
+                                <label class="form-check-label" for="Hypervolemia_subjective_2">
+                                    Dyspnoea
+                                </label>
+                            </div>
+                            <div class="form-check py-2 mx-2">
+                                <input class="form-check-input" type="checkbox" name="Hypervolemia_subjective[]" value="Paroxysmal nocturnal" id="Hypervolemia_subjective_3">
+                                <label class="form-check-label" for="Hypervolemia_subjective_3">
+                                    Paroxysmal nocturnal
+                                </label>
+                            </div>
+                            <div class="form-check py-2 mx-2">
+                                <input class="form-check-input" type="checkbox" name="Hypervolemia_subjective[]" value="Dyspnoea (PND)" id="Hypervolemia_subjective_4">
+                                <label class="form-check-label" for="Hypervolemia_subjective_4">
+                                    Dyspnoea (PND)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>B. Objective</label>
+                        <div id="Hypervolemia_objective" class="d-flex flex-wrap">
+                            <div class="form-check py-2 mx-2">
+                                <input class="form-check-input" type="checkbox" name="Hypervolemia_objective[]" value="Grimacing" id="Hypervolemia_objective_1">
+                                <label class="form-check-label" for="Hypervolemia_objective_1">
+                                    Grimacing
+                                </label>
+                            </div>
+                            <div class="form-check py-2 mx-2">
+                                <input class="form-check-input" type="checkbox" name="Hypervolemia_objective[]" value="Weight gain in a short time" id="Hypervolemia_objective_2">
+                                <label class="form-check-label" for="Hypervolemia_objective_2">
+                                    Weight gain in a short time
+                                </label>
+                            </div>
+                            <div class="form-check py-2 mx-2">
+                                <input class="form-check-input" type="checkbox" name="Hypervolemia_objective[]" value="Jugular venous pressure (JVP) and/or Central Venous pressure (CVP) increased Positive hepatojugular reflex" id="Hypervolemia_objective_3">
+                                <label class="form-check-label" for="Hypervolemia_objective_3">
+                                    Jugular venous pressure (JVP) and/or Central Venous pressure (CVP) increased Positive hepatojugular reflex
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+        </div>
+
+
+        <div class="card card-custom">
+            <div class="card-body">
+                <P> Minor Criteria </P>
                 <div class="form-group mb-2">
-                    <label for="Hypervolemia_objective">B. Objective</label>
-                    <select name="Hypervolemia_objective" id="Hypervolemia_objective" class="form-control">
-                        <option value="Grimacing">Grimacing</option>
-                        <option value="Weight gain in a short time">Weight gain in a short time</option>
-                        <option
-                            value="Jugular venous pressure (JVP) and/or Central Venous pressure (CVP) increased Positive hepatojugular reflex">
-                            Jugular venous pressure (JVP) and/or Central Venous pressure (CVP) increased Positive
-                            hepatojugular reflex</option>
-                    </select>
+                    <label>1. Subjective</label>
+                    <div id="Hypervolemia_subjective_1" class="d-flex flex-wrap">
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_subjective_1[]" value="not available" id="Hypervolemia_subjective_1_1">
+                            <label class="form-check-label" for="Hypervolemia_subjective_1_1">
+                                not available
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-2">
+                    <label>B. Objective</label>
+                    <div id="Hypervolemia_objective_1" class="d-flex flex-wrap">
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_objective_1[]" value="Grimacing" id="Hypervolemia_objective_1_1">
+                            <label class="form-check-label" for="Hypervolemia_objective_1_1">
+                                Grimacing
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_objective_1[]" value="Jugular venous distention" id="Hypervolemia_objective_1_2">
+                            <label class="form-check-label" for="Hypervolemia_objective_1_2">
+                                Jugular venous distention
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_objective_1[]" value="Additional breath sounds" id="Hypervolemia_objective_1_3">
+                            <label class="form-check-label" for="Hypervolemia_objective_1_3">
+                                Additional breath sounds
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_objective_1[]" value="Hepatomegaly" id="Hypervolemia_objective_1_4">
+                            <label class="form-check-label" for="Hypervolemia_objective_1_4">
+                                Hepatomegaly
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_objective_1[]" value="Hb/Ht levels go down" id="Hypervolemia_objective_1_5">
+                            <label class="form-check-label" for="Hypervolemia_objective_1_5">
+                                Hb/Ht levels go down
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_objective_1[]" value="Oliguria" id="Hypervolemia_objective_1_6">
+                            <label class="form-check-label" for="Hypervolemia_objective_1_6">
+                                Oliguria
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_objective_1[]" value="Intake is more than output" id="Hypervolemia_objective_1_7">
+                            <label class="form-check-label" for="Hypervolemia_objective_1_7">
+                                Intake is more than output
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_objective_1[]" value="Lung congestion" id="Hypervolemia_objective_1_8">
+                            <label class="form-check-label" for="Hypervolemia_objective_1_8">
+                                Lung congestion
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="card card-custom">
-            <div class="card-body">
-                <p> Minor Criteria </p>
-                <div class="form-group mb-2">
-                    <label for="Hypervolemia_subjective_1">1. Subjective </label>
-                    <select name="Hypervolemia_subjective_1" id="Hypervolemia_subjective_1" class="form-control">
-                        <option value="not available">not available</option>
-                    </select>
-                </div>
-                <div class="form-group mb-2">
-                    <label for="Hypervolemia_objective_1">B. Objective</label>
-                    <select name="Hypervolemia_objective_1" id="Hypervolemia_objective_1" class="form-control">
-                        <option value="Grimacing">Grimacing</option>
-                        <option value="Jugular venous distention">Jugular venous distention</option>
-                        <option value="Additional breath sounds">Additional breath sounds</option>
-                        <option value="Hepatomegaly">Hepatomegaly</option>
-                        <option value="Hb/Ht levels go down">Hb/Ht levels go down</option>
-                        <option value="Oliguria">Oliguria</option>
-                        <option value="Intake is more than output">Intake is more than output</option>
-                        <option value="Lung congestion">Lung congestion</option>
-                    </select>
-                </div>
-            </div>
-        </div>
 
         <div class="card card-custom">
             <div class="card-body">
                 <div class="form-group mb-2">
-                    <label for="Hypervolemia_limitations">Characteristic limitation</label>
-                    <select name="Hypervolemia_limitations" id="Hypervolemia_limitations" class="form-control">
-                        <option value="Associated clinical conditions">Associated clinical conditions</option>
-                        <option value="Kidney disease: acute/chronic renal failure, nephrotic syndrome">Kidney disease:
-                            acute/chronic renal failure, nephrotic syndrome</option>
-                        <option value="Hypoalbuminemia">Hypoalbuminemia</option>
-                        <option value="Congestive heart failure">Congestive heart failure</option>
-                        <option value="Hormonal disorders">Hormonal disorders</option>
-                        <option value="Liver disease (eg cirrhosis, ascites, liver cancer)">Liver disease (eg cirrhosis,
-                            ascites, liver cancer)</option>
-                        <option value="Peripheral venous disease (eg varicose veins, venous thrombus, phlebitis)">
-                            Peripheral venous disease (eg varicose veins, venous thrombus, phlebitis)</option>
-                        <option value="Immobility">Peripheral venous disease (eg varicose veins, venous thrombus,
-                            phlebitis)</option>
-                    </select>
+                    <label>Characteristic limitation</label>
+                    <div id="Hypervolemia_limitations" class="d-flex flex-wrap">
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_limitations[]" value="Associated clinical conditions" id="Hypervolemia_limitations_1">
+                            <label class="form-check-label" for="Hypervolemia_limitations_1">
+                                Associated clinical conditions
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_limitations[]" value="Kidney disease: acute/chronic renal failure, nephrotic syndrome" id="Hypervolemia_limitations_2">
+                            <label class="form-check-label" for="Hypervolemia_limitations_2">
+                                Kidney disease: acute/chronic renal failure, nephrotic syndrome
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_limitations[]" value="Hypoalbuminemia" id="Hypervolemia_limitations_3">
+                            <label class="form-check-label" for="Hypervolemia_limitations_3">
+                                Hypoalbuminemia
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_limitations[]" value="Congestive heart failure" id="Hypervolemia_limitations_4">
+                            <label class="form-check-label" for="Hypervolemia_limitations_4">
+                                Congestive heart failure
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_limitations[]" value="Hormonal disorders" id="Hypervolemia_limitations_5">
+                            <label class="form-check-label" for="Hypervolemia_limitations_5">
+                                Hormonal disorders
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_limitations[]" value="Liver disease (eg cirrhosis, ascites, liver cancer)" id="Hypervolemia_limitations_6">
+                            <label class="form-check-label" for="Hypervolemia_limitations_6">
+                                Liver disease (eg cirrhosis, ascites, liver cancer)
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_limitations[]" value="Peripheral venous disease (eg varicose veins, venous thrombus, phlebitis)" id="Hypervolemia_limitations_7">
+                            <label class="form-check-label" for="Hypervolemia_limitations_7">
+                                Peripheral venous disease (eg varicose veins, venous thrombus, phlebitis)
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Hypervolemia_limitations[]" value="Immobility" id="Hypervolemia_limitations_8">
+                            <label class="form-check-label" for="Hypervolemia_limitations_8">
+                                Immobility
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <div class="card card-custom  bg-primary">
             <div class="card-body">
@@ -1077,111 +1288,276 @@
             <div class="card-body">
                 <p> Major Criteria </p>
                 <div class="form-group mb-2">
-                    <label for="Anxiety_subjective">1. Subjective </label>
-                    <select name="Anxiety_subjective" id="Anxiety_subjective" class="form-control">
-                        <option value="Feeling confused">Feeling confused</option>
-                        <option value="Feeling worried about the consequences of the conditions faced">Feeling worried
-                            about the consequences of the conditions faced</option>
-                        <option value="It's hard to concentrate">It's hard to concentrate</option>
-                    </select>
+                    <label>1. Subjective</label>
+                    <div id="Anxiety_subjective" class="d-flex flex-wrap">
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_subjective[]" value="Feeling confused" id="Anxiety_subjective_1">
+                            <label class="form-check-label" for="Anxiety_subjective_1">
+                                Feeling confused
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_subjective[]" value="Feeling worried about the consequences of the conditions faced" id="Anxiety_subjective_2">
+                            <label class="form-check-label" for="Anxiety_subjective_2">
+                                Feeling worried about the consequences of the conditions faced
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_subjective[]" value="It's hard to concentrate" id="Anxiety_subjective_3">
+                            <label class="form-check-label" for="Anxiety_subjective_3">
+                                It's hard to concentrate
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group mb-2">
-                    <label for="Anxiety_objective">B. Objective</label>
-                    <select name="Anxiety_objective" id="Anxiety_objective" class="form-control">
-                        <option value="Looking restless">Looking restless</option>
-                        <option value="Looks tense">Looks tense</option>
-                        <option value="Hard to sleep">Hard to sleep</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="card card-custom">
-            <div class="card-body">
-                <p> Minor Criteria </p>
-                <div class="form-group mb-2">
-                    <label for="Anxiety_subjective_1">1. Subjective </label>
-                    <select name="Anxiety_subjective_1" id="Anxiety_subjective_1" class="form-control">
-                        <option value="Complaining dizzy">Complaining dizzy</option>
-                        <option value="Anorexia">Anorexia</option>
-                        <option value="Palpitations">Palpitations</option>
-                        <option value="Feeling helpless">Feeling helpless</option>
-                    </select>
-                </div>
-                <div class="form-group mb-2">
-                    <label for="Anxiety_objective_1">B. Objective</label>
-                    <select name="Anxiety_objective_1" id="Anxiety_objective_1" class="form-control">
-                        <option value="Increased respiratory rate">Increased respiratory rate</option>
-                        <option value="Increased pulse rate">Increased pulse rate</option>
-                        <option value="Increased blood pressure">Increased blood pressure</option>
-                        <option value="Diaphoresis">Diaphoresis</option>
-                        <option value="Tremor">Tremor</option>
-                        <option value="Face looks pale">Face looks pale</option>
-                        <option value="Vibrating voice">Vibrating voice</option>
-                        <option value="Bad eye contact">Bad eye contact</option>
-                        <option value="Frequent urination">Frequent urination</option>
-                        <option value="Oriented to the past">Oriented to the past</option>
-                    </select>
+                    <label>B. Objective</label>
+                    <div id="Anxiety_objective" class="d-flex flex-wrap">
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_objective[]" value="Looking restless" id="Anxiety_objective_1">
+                            <label class="form-check-label" for="Anxiety_objective_1">
+                                Looking restless
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_objective[]" value="Looks tense" id="Anxiety_objective_2">
+                            <label class="form-check-label" for="Anxiety_objective_2">
+                                Looks tense
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_objective[]" value="Hard to sleep" id="Anxiety_objective_3">
+                            <label class="form-check-label" for="Anxiety_objective_3">
+                                Hard to sleep
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="card card-custom">
             <div class="card-body">
+                <p> Minor Criteria </p>
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <div class="form-group mb-2">
+                            <label>1. Subjective</label>
+                            <div id="Anxiety_subjective_1" class="d-flex flex-wrap">
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_subjective_1[]" value="Complaining dizzy" id="Anxiety_subjective_1_1">
+                                    <label class="form-check-label" for="Anxiety_subjective_1_1">
+                                        Complaining dizzy
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_subjective_1[]" value="Anorexia" id="Anxiety_subjective_1_2">
+                                    <label class="form-check-label" for="Anxiety_subjective_1_2">
+                                        Anorexia
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_subjective_1[]" value="Palpitations" id="Anxiety_subjective_1_3">
+                                    <label class="form-check-label" for="Anxiety_subjective_1_3">
+                                        Palpitations
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_subjective_1[]" value="Feeling helpless" id="Anxiety_subjective_1_4">
+                                    <label class="form-check-label" for="Anxiety_subjective_1_4">
+                                        Feeling helpless
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-2">
+                            <label>B. Objective</label>
+                            <div id="Anxiety_objective_1" class="d-flex flex-wrap">
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_objective_1[]" value="Increased respiratory rate" id="Anxiety_objective_1_1">
+                                    <label class="form-check-label" for="Anxiety_objective_1_1">
+                                        Increased respiratory rate
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_objective_1[]" value="Increased pulse rate" id="Anxiety_objective_1_2">
+                                    <label class="form-check-label" for="Anxiety_objective_1_2">
+                                        Increased pulse rate
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_objective_1[]" value="Increased blood pressure" id="Anxiety_objective_1_3">
+                                    <label class="form-check-label" for="Anxiety_objective_1_3">
+                                        Increased blood pressure
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_objective_1[]" value="Diaphoresis" id="Anxiety_objective_1_4">
+                                    <label class="form-check-label" for="Anxiety_objective_1_4">
+                                        Diaphoresis
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_objective_1[]" value="Tremor" id="Anxiety_objective_1_5">
+                                    <label class="form-check-label" for="Anxiety_objective_1_5">
+                                        Tremor
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_objective_1[]" value="Face looks pale" id="Anxiety_objective_1_6">
+                                    <label class="form-check-label" for="Anxiety_objective_1_6">
+                                        Face looks pale
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_objective_1[]" value="Vibrating voice" id="Anxiety_objective_1_7">
+                                    <label class="form-check-label" for="Anxiety_objective_1_7">
+                                        Vibrating voice
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_objective_1[]" value="Bad eye contact" id="Anxiety_objective_1_8">
+                                    <label class="form-check-label" for="Anxiety_objective_1_8">
+                                        Bad eye contact
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_objective_1[]" value="Frequent urination" id="Anxiety_objective_1_9">
+                                    <label class="form-check-label" for="Anxiety_objective_1_9">
+                                        Frequent urination
+                                    </label>
+                                </div>
+                                <div class="form-check py-2 mx-2">
+                                    <input class="form-check-input" type="checkbox" name="Anxiety_objective_1[]" value="Oriented to the past" id="Anxiety_objective_1_10">
+                                    <label class="form-check-label" for="Anxiety_objective_1_10">
+                                        Oriented to the past
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card card-custom">
+            <div class="card-body">
                 <div class="form-group mb-2">
-                    <label for="Anxiety_related_condition">Related Clinical Conditions</label>
-                    <select name="Anxiety_related_condition" id="Anxiety_related_condition" class="form-control">
-                        <option value="Progressive chronic disease (eg cancer, autoimmune disease)">Progressive chronic
-                            disease (eg cancer, autoimmune disease)</option>
-                        <option value="Acute illness">Acute illness</option>
-                        <option value="Hospitalization">Hospitalization</option>
-                        <option value="Operation plan">Operation plan</option>
-                        <option value="The condition of the disease diagnosis is not clear">The condition of the disease
-                            diagnosis is not clear</option>
-                        <option value="Neurological disease">Neurological disease</option>
-                        <option value="Growth stage">Growth stage</option>
-                    </select>
+                    <label>Related Clinical Conditions</label>
+                    <div id="Anxiety_related_condition" class="d-flex flex-wrap">
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_related_condition[]" value="Progressive chronic disease (eg cancer, autoimmune disease)" id="Anxiety_related_condition_1">
+                            <label class="form-check-label" for="Anxiety_related_condition_1">
+                                Progressive chronic disease (eg cancer, autoimmune disease)
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_related_condition[]" value="Acute illness" id="Anxiety_related_condition_2">
+                            <label class="form-check-label" for="Anxiety_related_condition_2">
+                                Acute illness
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_related_condition[]" value="Hospitalization" id="Anxiety_related_condition_3">
+                            <label class="form-check-label" for="Anxiety_related_condition_3">
+                                Hospitalization
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_related_condition[]" value="Operation plan" id="Anxiety_related_condition_4">
+                            <label class="form-check-label" for="Anxiety_related_condition_4">
+                                Operation plan
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_related_condition[]" value="The condition of the disease diagnosis is not clear" id="Anxiety_related_condition_5">
+                            <label class="form-check-label" for="Anxiety_related_condition_5">
+                                The condition of the disease diagnosis is not clear
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_related_condition[]" value="Neurological disease" id="Anxiety_related_condition_6">
+                            <label class="form-check-label" for="Anxiety_related_condition_6">
+                                Neurological disease
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="Anxiety_related_condition[]" value="Growth stage" id="Anxiety_related_condition_7">
+                            <label class="form-check-label" for="Anxiety_related_condition_7">
+                                Growth stage
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <div class="card card-custom bg-primary">
             <div class="card-body">
                 <div class="form-group mb-2"></div>
                 <a for="Risk">5. Risk for decreased cardiac output related to changes in afterload</a>
                 <p>Goal: After nursing actions are expected to increase cardiac output</p>
+                <p>risk_outcome_criteria</p>
             </div>
         </div>
         </div>
 
-        <div class="card card-custom">
-            <div class="card-body">
-                <div class="form-group mb-2">
-                    <label for="risk_outcome_criteria">Outcome criteria: cardiac output </label>
-                    <select name="risk_outcome_criteria" id="risk_outcome_criteria" class="form-control">
-                        <option value="Vital signs within normal range">Vital signs within normal range</option>
-                        <option value="Strong pulse">Strong pulse</option>
-                        <option value="The patient does not complain of fatigue">The patient does not complain of fatigue
-                        </option>
-                    </select>
-                </div>
-            </div>
-        </div>
 
         <div class="card card-custom">
             <div class="card-body">
                 <div class="form-group mb-2">
-                    <label for="risk_outcome_criteria">Action plan: </label>
-                    <select name="risk_outcome_criteria" id="risk_outcome_criteria" class="form-control">
-                        <option value="Dyspnoea">Dyspnoea</option>
-                        <option value="Fatigue">Fatigue</option>
-                        <option value="Edema">Edema</option>
-                        <option value="Orthopnoea">Orthopnoea</option>
-                        <option value="Paroxysmal">Paroxysmal</option>
-                        <option value="CVP increase">CVP increase</option>
-                    </select>
+                    <label  class="form-control">Related Clinical Conditions</label>
+                    <div id="risk_related_conditions" class="d-flex flex-wrap">
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="risk_related_conditions[]" value="Progressive chronic disease (eg cancer, autoimmune disease)" id="risk_related_conditions_1">
+                            <label class="form-check-label" for="risk_related_conditions_1">
+                                Progressive chronic disease (eg cancer, autoimmune disease)
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="risk_related_conditions[]" value="Acute illness" id="risk_related_conditions_2">
+                            <label class="form-check-label" for="risk_related_conditions_2">
+                                Acute illness
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="risk_related_conditions[]" value="Hospitalization" id="risk_related_conditions_3">
+                            <label class="form-check-label" for="risk_related_conditions_3">
+                                Hospitalization
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="risk_related_conditions[]" value="Operation plan" id="risk_related_conditions_4">
+                            <label class="form-check-label" for="risk_related_conditions_4">
+                                Operation plan
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="risk_related_conditions[]" value="The condition of the disease diagnosis is not clear" id="risk_related_conditions_5">
+                            <label class="form-check-label" for="risk_related_conditions_5">
+                                The condition of the disease diagnosis is not clear
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="risk_related_conditions[]" value="Neurological disease" id="risk_related_conditions_6">
+                            <label class="form-check-label" for="risk_related_conditions_6">
+                                Neurological disease
+                            </label>
+                        </div>
+                        <div class="form-check py-2 mx-2">
+                            <input class="form-check-input" type="checkbox" name="risk_related_conditions[]" value="Growth stage" id="risk_related_conditions_7">
+                            <label class="form-check-label" for="risk_related_conditions_7">
+                                Growth stage
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
 
     </form>
 

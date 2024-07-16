@@ -42,9 +42,101 @@ class PasienController extends Controller
      */
     public function store(Request $request)
     {
-        Pasien::create($request->all());
+        $request->validate([
+            'nama' => 'required',
+            'umur' => 'required',
+            'jenis_kelamin' => 'required',
+            'pekerjaan' => 'required',
+            'alamat' => 'required',
+            'status' => 'required',
+            'pendidikan' => 'required',
+            'keluhan' => 'required|array',  // Validate as array
+            'riwayat_penyakit' => 'required|array',  // Validate as array
+            'riwayat_alergi' => 'required|array',  // Validate as array
+            'riwayat_penyakit_keluarga' => 'required|array',  // Validate as array
+            'aktifitas_sehari_hari' => 'required|array',  // Validate as array
+            'sirkulasi' => 'required|array',  // Validate as array
+            'integritas_ego' => 'required|array',  // Validate as array
+            'eliminasi' => 'required|array',  // Validate as array
+            'nutrisi' => 'required|array',  // Validate as array
+            'rasa_sakit' => 'required|array',  // Validate as array
+            'pernapasan' => 'required|array',  // Validate as array
+            'keamanan' => 'required|array',  // Validate as array
 
-        return redirect()->route('pasien.index');
+            // Inursing Diagnosis
+            'physiological_injury' => 'required|array',  // Validate as array
+            'physiological_injury_minor_a' => 'required|array',  // Validate as array
+            'physiological_injury_minor_b' => 'required|array',  // Validate as array
+            'physiological_injury_minor_a_2' => 'required|array',  // Validate as array
+            'physiological_injury_minor_b_2' => 'required|array',  // Validate as array
+            'related_clinical_conditions' => 'required|array',  // Validate as array
+
+            // 2.Ineffective peripheral perfusion
+
+            
+        ]);
+
+        // Join array into a string for storage, if necessary
+        $keluhan = implode(', ', $request->input('keluhan'));
+        $riwayat_penyakit = implode(', ', $request->input('riwayat_penyakit'));
+        $riwayat_alergi = implode(', ', $request->input('riwayat_alergi'));
+        $riwayat_penyakit_keluarga = implode(', ', $request->input('riwayat_penyakit_keluarga'));
+        $aktifitas_sehari_hari = implode(', ', $request->input('aktifitas_sehari_hari'));
+        $sirkulasi = implode(', ', $request->input('sirkulasi'));
+        $integritas_ego = implode(', ', $request->input('integritas_ego'));
+        $eliminasi = implode(', ', $request->input('eliminasi'));
+        $nutrisi = implode(', ', $request->input('nutrisi'));
+        $rasa_sakit = implode(', ', $request->input('rasa_sakit'));
+        $pernapasan = implode(', ', $request->input('pernapasan'));
+        $keamanan = implode(', ', $request->input('keamanan'));
+
+        // Inursing Diagnosis
+        $physiological_injury = implode(', ', $request->input('physiological_injury'));
+        $physiological_injury_minor_a = implode(', ', $request->input('physiological_injury_minor_a'));
+        $physiological_injury_minor_b = implode(', ', $request->input('physiological_injury_minor_b'));
+        $physiological_injury_minor_a_2 = implode(', ', $request->input('physiological_injury_minor_a_2'));
+        $physiological_injury_minor_b_2 = implode(', ', $request->input('physiological_injury_minor_b_2'));
+        $related_clinical_conditions = implode(', ', $request->input('related_clinical_conditions'));
+
+
+
+        // Store the data (adjust based on your storage logic)
+        Pasien::create([
+            'nama' => $request->input('nama'),
+            'umur' => $request->input('umur'),
+            'jenis_kelamin' => $request->input('jenis_kelamin'),
+            'pekerjaan' => $request->input('pekerjaan'),
+            'alamat' => $request->input('alamat'),
+            'status' => $request->input('status'),
+            'pendidikan' => $request->input('pendidikan'),
+            'keluhan' => $keluhan,  // Store the complaints
+            'riwayat_penyakit' => $riwayat_penyakit,  // Store the complaints
+            'riwayat_alergi' => $riwayat_alergi,  // Store the complaints
+            'riwayat_penyakit_keluarga' => $riwayat_penyakit_keluarga,  // Store the complaints
+            'aktifitas_sehari_hari' => $aktifitas_sehari_hari,  // Store the complaints
+            'sirkulasi' => $sirkulasi,  // Store the complaints
+            'integritas_ego' => $integritas_ego,  // Store the complaints
+            'eliminasi' => $eliminasi,  // Store the complaints
+            'nutrisi' => $nutrisi,  // Store the complaints
+            'rasa_sakit' => $rasa_sakit,  // Store the complaints
+            'pernapasan' => $pernapasan,  // Store the complaints
+            'keamanan' => $keamanan,  // Store the complaintswww
+
+            // Inursing Diagnosis
+            'physiological_injury' => $physiological_injury,  // Store the complaints
+            'physiological_injury_minor_a' => $physiological_injury_minor_a,  // Store the complaints
+            'physiological_injury_minor_b' => $physiological_injury_minor_b,  // Store the complaints
+            'physiological_injury_minor_a_2' => $physiological_injury_minor_a_2,  // Store the complaints
+            'physiological_injury_minor_b_2' => $physiological_injury_minor_b_2,  // Store the complaints
+            'related_clinical_conditions' => $related_clinical_conditions,  // Store the complaints
+
+        ]);
+
+        try {
+            return redirect()->route('pasien.index')->with('success', 'Pasien berhasil ditambahkan');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', $e->getMessage());
+        }
     }
 
     /**

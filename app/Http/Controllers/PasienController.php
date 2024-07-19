@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Pasien;
+use App\Models\PasienPlan;
 
 class PasienController extends Controller
 {
@@ -19,8 +20,9 @@ class PasienController extends Controller
         ]);
 
         $pasiens = Pasien::all();
+        $pasiensPlan = PasienPlan::all();
 
-        return view('pasien.index', compact('pageTitle', 'pasiens'));
+        return view('pasien.index', compact('pageTitle', 'pasiens', 'pasiensPlan'));
     }
 
     /**

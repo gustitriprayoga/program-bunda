@@ -32,12 +32,13 @@
                                 <th width="1%">No</th>
                                 <th>Nama</th>
                                 <th>Jenis Kelamin</th>
-                                <th>Alamat</th>
+                                <th>Disease Status</th>
+                                <th width="10%">Planing</th>
                                 <th width="10%">
-                                    Detail
+                                    Implementation
                                 </th>
                                 <th width="10%">
-                                    Aksi
+                                    Action
                                 </th>
                             </tr>
                         </thead>
@@ -46,10 +47,12 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $item->nama }}</td>
-                                    <td>{{ $item->nama }}</td>
-                                    <td>{{ $item->nama }}</td>
-                                    <td><a href="" class="btn btn-success btn-sm"> <i class="fe fe-eye"> |</i> Rekam
-                                            Medis </a></td>
+                                    <td>{{ $item->jenis_kelamin }}</td>
+                                    <td>{{ $item->status_penyakit }}</td>
+                                    <td>
+                                        <a href="" class="btn btn-primary btn-sm"> <i class="fe fe-eye"> |</i> Planing </a>
+                                    </td>
+                                    <td><a href="" class="btn btn-success btn-sm"> <i class="fe fe-eye"> |</i> Implementation </a></td>
                                     <td>
                                         <a href="{{ route('pasien.edit', $item->id) }}" class="btn btn-warning btn-sm"><i class="fe fe-edit"> |</i> Edit
                                         </a>

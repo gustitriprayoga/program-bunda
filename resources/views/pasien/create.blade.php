@@ -367,7 +367,7 @@
                 </div>
 
                 <div class="form-group mb-2">
-                    <label for="sirkulasi">Circulation</label>
+                    <label for="sirkulasi" class="form-control">Circulation</label>
                     <div id="sirkulasi" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="sirkulasi[]"
@@ -457,7 +457,7 @@
                 </div>
 
                 <div class="form-group mb-2">
-                    <label for="integritas_ego">Ego Integrity</label>
+                    <label for="integritas_ego" class="form-control">Ego Integrity</label>
                     <div id="integritas_ego" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="integritas_ego[]" value="Anxiety"
@@ -506,7 +506,7 @@
 
 
                 <div class="form-group mb-2">
-                    <label for="eliminasi">Elimination</label>
+                    <label for="eliminasi" class="form-control">Elimination</label>
                     <div id="eliminasi" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="eliminasi[]"
@@ -533,7 +533,7 @@
                 </div>
 
                 <div class="form-group mb-2">
-                    <label for="nutrisi">Food / Liquid</label>
+                    <label for="nutrisi" class="form-control">Food / Liquid</label>
                     <div id="nutrisi" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="nutrisi[]" value="Foods high in salt"
@@ -602,7 +602,7 @@
                 </div>
 
                 <div class="form-group mb-2">
-                    <label for="rasa_sakit">Pain / Discomfort</label>
+                    <label for="rasa_sakit"  class="form-control">Pain / Discomfort</label>
                     <div id="rasa_sakit" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="rasa_sakit[]" value="Headache"
@@ -629,7 +629,7 @@
                 </div>
 
                 <div class="form-group mb-2">
-                    <label for="pernapasan">Breathing</label>
+                    <label for="pernapasan"  class="form-control">Breathing</label>
                     <div id="pernapasan" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="pernapasan[]"
@@ -678,7 +678,7 @@
 
 
                 <div class="form-group mb-2">
-                    <label for="keamanan">Security</label>
+                    <label for="keamanan"  class="form-control">Security</label>
                     <div id="keamanan" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="keamanan[]"
@@ -707,7 +707,7 @@
             </div>
             <div class="card-body">
                 <div class="form-group mb-2">
-                    <label>1. Physiological Injury Agents</label>
+                    <label  class="form-control">1. Physiological Injury Agents</label>
                     <div id="physiological_injury" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="physiological_injury[]"
@@ -744,7 +744,7 @@
                 <p> Major Criteria </p>
                 <hr>
                 <div class="form-group mb-2">
-                    <label>A. Subjective</label>
+                    <label  class="form-control">A. Subjective</label>
                     <div id="physiological_injury_minor_a" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="physiological_injury_minor_a[]"
@@ -757,7 +757,7 @@
                 </div>
 
                 <div class="form-group mb-2">
-                    <label>B. Objective</label>
+                    <label  class="form-control">B. Objective</label>
                     <div id="physiological_injury_minor_b" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="physiological_injury_minor_b[]"
@@ -801,7 +801,7 @@
                 <p> Minor Criteria </p>
                 <hr>
                 <div class="form-group mb-2">
-                    <label>A. Subjective</label>
+                    <label  class="form-control">A. Subjective</label>
                     <div id="physiological_injury_minor_a_2" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="physiological_injury_minor_a_2[]"
@@ -814,7 +814,7 @@
                 </div>
 
                 <div class="form-group mb-2">
-                    <label>B. Objective</label>
+                    <label  class="form-control">B. Objective</label>
                     <div id="physiological_injury_minor_b_2" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="physiological_injury_minor_b_2[]"
@@ -877,7 +877,7 @@
         <div class="card card-custom">
             <div class="card-body">
                 <div class="form-group mb-2">
-                    <label>Related Clinical Conditions</label>
+                    <label  class="form-control">Related Clinical Conditions</label>
                     <div id="related_clinical_conditions" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="related_clinical_conditions[]" value="Surgical conditions" id="related_clinical_conditions_1">
@@ -917,7 +917,7 @@
 
         <div class="card card-custom  bg-primary">
             <div class="card-body">
-                <div class="form-group mb-2">
+                <div class="form-group mb-2"  class="form-control">
                     <a for="ineffective">2.Ineffective peripheral perfusion </a>
                 </div>
             </div>
@@ -928,7 +928,7 @@
                 <div class="card card-custom">
                     <div class="card-body">
                         <div class="form-group mb-2">
-                            <label>Subjective</label>
+                            <label  class="form-control">Subjective</label>
                             <div id="ineffective_subjective" class="d-flex flex-wrap">
                                 <div class="form-check py-2 mx-2">
                                     <input class="form-check-input" type="checkbox" name="ineffective_subjective[]" value="not available" id="ineffective_subjective_1">
@@ -972,7 +972,7 @@
                         <p class="mb-2"><b>Minor Criteria</b></p>
 
                         <div class="form-group mb-2">
-                            <label for="ineffective_objective_a">1. Subjective</label>
+                            <label for="ineffective_objective_a"  class="form-control">1. Subjective</label>
                             <div id="ineffective_objective_a" class="d-flex flex-wrap">
                                 <div class="form-check py-2 mx-2">
                                     <input class="form-check-input" type="checkbox" name="ineffective_objective_a[]" value="Paraesthesia" id="ineffective_objective_a_1">
@@ -990,7 +990,7 @@
                         </div>
 
                         <div class="form-group mb-2">
-                            <label for="ineffective_objective_b">2. Subjective</label>
+                            <label for="ineffective_objective_b"  class="form-control">2. Subjective</label>
                             <div id="ineffective_objective_b" class="d-flex flex-wrap">
                                 <div class="form-check py-2 mx-2">
                                     <input class="form-check-input" type="checkbox" name="ineffective_objective_b[]" value="Edema" id="ineffective_objective_b_1">
@@ -1008,7 +1008,7 @@
                         </div>
 
                         <div class="form-group mb-2">
-                            <label for="associated_clinical_conditions_2">2. Subjective</label>
+                            <label for="associated_clinical_conditions_2"  class="form-control">2. Subjective</label>
                             <div id="associated_clinical_conditions_2" class="d-flex flex-wrap">
                                 <div class="form-check py-2 mx-2">
                                     <input class="form-check-input" type="checkbox" name="associated_clinical_conditions_2[]" value="Thrombophlebitis" id="associated_clinical_conditions_2_1">
@@ -1082,7 +1082,7 @@
                     <p>Major Criteria</p>
 
                     <div class="form-group mb-2">
-                        <label>1. Subjective</label>
+                        <label  class="form-control">1. Subjective</label>
                         <div id="Hypervolemia_subjective" class="d-flex flex-wrap">
                             <div class="form-check py-2 mx-2">
                                 <input class="form-check-input" type="checkbox" name="Hypervolemia_subjective[]" value="Orthopnoea" id="Hypervolemia_subjective_1">
@@ -1112,7 +1112,7 @@
                     </div>
 
                     <div class="form-group mb-2">
-                        <label>B. Objective</label>
+                        <label  class="form-control">B. Objective</label>
                         <div id="Hypervolemia_objective" class="d-flex flex-wrap">
                             <div class="form-check py-2 mx-2">
                                 <input class="form-check-input" type="checkbox" name="Hypervolemia_objective[]" value="Grimacing" id="Hypervolemia_objective_1">
@@ -1144,7 +1144,7 @@
             <div class="card-body">
                 <P> Minor Criteria </P>
                 <div class="form-group mb-2">
-                    <label>1. Subjective</label>
+                    <label  class="form-control">1. Subjective</label>
                     <div id="Hypervolemia_subjective_1" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="Hypervolemia_subjective_1[]" value="not available" id="Hypervolemia_subjective_1_1">
@@ -1156,7 +1156,7 @@
                 </div>
 
                 <div class="form-group mb-2">
-                    <label>B. Objective</label>
+                    <label  class="form-control">B. Objective</label>
                     <div id="Hypervolemia_objective_1" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="Hypervolemia_objective_1[]" value="Grimacing" id="Hypervolemia_objective_1_1">
@@ -1215,7 +1215,7 @@
         <div class="card card-custom">
             <div class="card-body">
                 <div class="form-group mb-2">
-                    <label>Characteristic limitation</label>
+                    <label  class="form-control">Characteristic limitation</label>
                     <div id="Hypervolemia_limitations" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="Hypervolemia_limitations[]" value="Associated clinical conditions" id="Hypervolemia_limitations_1">
@@ -1288,7 +1288,7 @@
             <div class="card-body">
                 <p> Major Criteria </p>
                 <div class="form-group mb-2">
-                    <label>1. Subjective</label>
+                    <label  class="form-control">1. Subjective</label>
                     <div id="Anxiety_subjective" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="Anxiety_subjective[]" value="Feeling confused" id="Anxiety_subjective_1">
@@ -1311,7 +1311,7 @@
                     </div>
                 </div>
                 <div class="form-group mb-2">
-                    <label>B. Objective</label>
+                    <label  class="form-control">B. Objective</label>
                     <div id="Anxiety_objective" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="Anxiety_objective[]" value="Looking restless" id="Anxiety_objective_1">
@@ -1342,7 +1342,7 @@
                 <div class="card card-custom">
                     <div class="card-body">
                         <div class="form-group mb-2">
-                            <label>1. Subjective</label>
+                            <label  class="form-control">1. Subjective</label>
                             <div id="Anxiety_subjective_1" class="d-flex flex-wrap">
                                 <div class="form-check py-2 mx-2">
                                     <input class="form-check-input" type="checkbox" name="Anxiety_subjective_1[]" value="Complaining dizzy" id="Anxiety_subjective_1_1">
@@ -1371,7 +1371,7 @@
                             </div>
                         </div>
                         <div class="form-group mb-2">
-                            <label>B. Objective</label>
+                            <label  class="form-control">B. Objective</label>
                             <div id="Anxiety_objective_1" class="d-flex flex-wrap">
                                 <div class="form-check py-2 mx-2">
                                     <input class="form-check-input" type="checkbox" name="Anxiety_objective_1[]" value="Increased respiratory rate" id="Anxiety_objective_1_1">
@@ -1444,7 +1444,7 @@
         <div class="card card-custom">
             <div class="card-body">
                 <div class="form-group mb-2">
-                    <label>Related Clinical Conditions</label>
+                    <label  class="form-control"> Anxiety Related Clinical Conditions</label>
                     <div id="Anxiety_related_condition" class="d-flex flex-wrap">
                         <div class="form-check py-2 mx-2">
                             <input class="form-check-input" type="checkbox" name="Anxiety_related_condition[]" value="Progressive chronic disease (eg cancer, autoimmune disease)" id="Anxiety_related_condition_1">
@@ -1499,9 +1499,7 @@
                 <div class="form-group mb-2"></div>
                 <a for="Risk">5. Risk for decreased cardiac output related to changes in afterload</a>
                 <p>Goal: After nursing actions are expected to increase cardiac output</p>
-                <p>risk_outcome_criteria</p>
             </div>
-        </div>
         </div>
 
 
@@ -1557,7 +1555,23 @@
             </div>
         </div>
 
+        <div class="card card-custom">
+            <div class="card-body">
+                <div class="form-group mb-2">
+                    <label for="status_penyakit">Selected Pain</label>
+                    <select class="form-control" id="status_penyakit" name="status_penyakit">
+                        <option value="Acute_pain">Acute Pain</option>
+                        <option value="Ineffective">Ineffective peripheral perfusion </option>
+                        <option value="Hypervolemia">Hypervolemia</option>
+                        <option value="Anxiety">Anxiety</option>
+                        <option value="Risk">Risk for Decreased Cardiac output</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
+
+        <button type="submit" class="btn btn-primary"></button>
 
     </form>
 

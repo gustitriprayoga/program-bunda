@@ -490,7 +490,7 @@
             <div class="container-fluid">
 
                 @yield('content')
-                
+
             </div>
         </div>
         <!-- End::app-content -->
@@ -502,6 +502,8 @@
 
     </div>
 
+
+    @include('sweetalert::alert')
 
     @include('layouts.scripts')
 

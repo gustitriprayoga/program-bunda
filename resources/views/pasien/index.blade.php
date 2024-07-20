@@ -50,9 +50,21 @@
                                     <td>{{ $item->jenis_kelamin }}</td>
                                     <td>{{ $item->status_penyakit }}</td>
                                     <td>
-                                        <a href="" class="btn btn-primary btn-sm"> <i class="fe fe-eye"> |</i> Planing </a>
+                                        @if ($item->status_penyakit == 'Acute_pain')
+                                            <a href="{{ route('pasien.plan.acutepain.index') }}" class="btn btn-success btn-sm"> <i class="fe fe-eye"> |</i> Add Plan </a>
+                                        @elseif ($item->status_penyakit == 'Ineffective')
+                                            <a href="{{ route('pasien.plan.ineffective.index') }}" class="btn btn-success btn-sm"> <i class="fe fe-eye"> |</i> Add Plan </a>
+                                        @elseif ($item->status_penyakit == 'Hypervolemia')
+                                            <a href="{{ route('pasien.plan.hypervolemia.index') }}" class="btn btn-success btn-sm"> <i class="fe fe-eye"> |</i> Add Plan </a>
+                                        @elseif ($item->status_penyakit == 'Anxiety')
+                                            <a href="{{ route('pasien.plan.anxiety.index') }}" class="btn btn-success btn-sm"> <i class="fe fe-eye"> |</i> Add Plan </a>
+                                        @elseif ($item->status_penyakit == 'Risk')
+                                            <a href="{{ route('pasien.plan.risk.index') }}" class="btn btn-success btn-sm"> <i class="fe fe-eye"> |</i> Add Plan </a>
+                                        @endif
                                     </td>
-                                    <td><a href="" class="btn btn-success btn-sm"> <i class="fe fe-eye"> |</i> Implementation </a></td>
+                                    <td>
+                                        <a href="" class="btn btn-success btn-sm"> <i class="fe fe-eye"> |</i> Implementation </a>
+                                    </td>
                                     <td>
                                         <a href="{{ route('pasien.edit', $item->id) }}" class="btn btn-warning btn-sm"><i class="fe fe-edit"> |</i> Edit
                                         </a>

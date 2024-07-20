@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ineffective;
 use Illuminate\Http\Request;
 
-class PasienPlanController extends Controller
+class IneffectiveController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,13 +13,12 @@ class PasienPlanController extends Controller
     public function index()
     {
         $pageTitle = ([
-            'titleHalaman' => 'Patient Plan',
-            'subTitle' => 'Patien',
+            'titleHalaman' => 'Ineffective',
+            'subTitle' => 'Ineffective',
             'activePage' => 'Data',
         ]);
 
-
-        return view('pasien.plan.index',compact(['pageTitle']));
+        return view('plan.ineffective.index', compact(['pageTitle']));
     }
 
     /**
@@ -40,7 +40,7 @@ class PasienPlanController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Ineffective $ineffective)
     {
         //
     }
@@ -48,7 +48,7 @@ class PasienPlanController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Ineffective $ineffective)
     {
         //
     }
@@ -56,7 +56,7 @@ class PasienPlanController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Ineffective $ineffective)
     {
         //
     }
@@ -64,7 +64,7 @@ class PasienPlanController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Ineffective $ineffective)
     {
         //
     }

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PasienPlanController extends Controller
+class HypervolemiaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,13 +12,12 @@ class PasienPlanController extends Controller
     public function index()
     {
         $pageTitle = ([
-            'titleHalaman' => 'Patient Plan',
-            'subTitle' => 'Patien',
+            'titleHalaman' => 'Hypervolemia',
+            'subTitle' => 'Hypervolemia',
             'activePage' => 'Data',
         ]);
 
-
-        return view('pasien.plan.index',compact(['pageTitle']));
+        return view('plan.hypervolemia.index', compact(['pageTitle']));
     }
 
     /**
@@ -26,7 +25,7 @@ class PasienPlanController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**

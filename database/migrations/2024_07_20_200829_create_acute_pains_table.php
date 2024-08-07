@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('acute_pains', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('pasien_id')->references('id')->on('pasiens');
+            $table->string('outcome_criteria')->nullable();
+            $table->string('action_plan')->nullable();
+            $table->string('reduce_pain')->nullable();
+
             $table->timestamps();
         });
     }

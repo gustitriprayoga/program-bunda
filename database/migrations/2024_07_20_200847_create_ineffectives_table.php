@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('ineffectives', function (Blueprint $table) {
             $table->id();
+            $table->string('patient_id');
+            $table->string('outcome_criteria')->nullable();
+            $table->string('action_plan')->nullable();
             $table->timestamps();
         });
     }

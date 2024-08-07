@@ -15,4 +15,5 @@ class Pasien extends Model
     {
         return $this->hasOne(PasienPlan::class);
     }
+    
 }

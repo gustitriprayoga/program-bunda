@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ineffective;
+use App\Models\Pasien;
 use Illuminate\Http\Request;
 
 class IneffectiveController extends Controller
@@ -24,9 +25,17 @@ class IneffectiveController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create($id)
     {
-        //
+        $pageTitle = ([
+            'titleHalaman' => 'Ineffective',
+            'subTitle' => 'Ineffective',
+            'activePage' => 'Create',
+        ]);
+
+        $pasien = Pasien::find($id);
+
+        return view('plan.ineffective.create', compact(['pageTitle', 'pasien']));
     }
 
     /**
@@ -34,7 +43,26 @@ class IneffectiveController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $request->validate([
+                'patient_id' => 'required|array',
+                'outcome_criteria' => 'required|array',
+                'action_plan' => 'required|array',
+            ]);
+
+            $outcome_criteria = implode(', ', $request->input('outcome_criteria'));
+            $action_plan = implode(', ', $request->input('action_plan'));
+
+            Ineffective::create([
+                'patient_id' => $request->patient_id,
+                'outcome_criteria' => $outcome_criteria,
+                'action_plan' => $action_plan,
+            ]);
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'Error: ' . $e->getMessage());
+        }
+
+        return redirect()->route('pasien.plan.ineffective.index')->with('success', 'Data berhasil disimpan');
     }
 
     /**

@@ -17,40 +17,40 @@
     </div>
     <!-- PAGE-HEADER END -->
 
-    <!-- Start:: row-4 -->
-    <div class="row">
-        <div class="col-xl-12">
-            <div class="card custom-card">
-                <div class="card-header justify-content-between d-flex">
-                    <div class="card-title">Acute Pain Plan</div>
-                    <a href="{{ route('pasien.create') }}" class="btn btn-primary"><i class="fe fe-plus"> |</i> Add</a>
-                </div>
-                <div class="card-body">
-                    <table id="file-export" class="table table-bordered text-nowrap w-100">
-                        <thead>
-                            <tr>
-                                <th width="1%">No</th>
-                                <th>Nama</th>
-                                <th>Jenis Kelamin</th>
-                                <th>Disease Status</th>
-                                <th width="10%">Planing</th>
-                                <th width="10%">
-                                    Implementation
-                                </th>
-                                <th width="10%">
-                                    Action
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
 
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+    <!-- End:: row-4 -->
+    <div class="card custom-card">
+        <div class="card-header">
+            Test
+        </div>
+        <div class="card-body">
+            <table id="file-export" class="table table-bordered text-nowrap w-100">
+                <thead>
+                    <tr>
+                        <th width="1%">No</th>
+                        <th>Patient</th>
+                        <th>Outcome Criteria</th>
+                        <th>Action Plan</th>
+                        <th>Reduce Pain</th>
+                        <th width="10%">
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($acutePains as $item)
+                        <tr>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $item->pasiens }}</td>
+                            <td>{{ $item->outcome_criteria }}</td>
+                            <td>{{ $item->action_plan }}</td>
+                            <td>{{ $item->reduce_pain }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
     </div>
-    <!-- End:: row-4 -->
 
 
 @endsection

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Pasien;
+use App\Models\Hypervolemia;
 
 class HypervolemiaController extends Controller
 {
@@ -23,9 +25,17 @@ class HypervolemiaController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create($id)
     {
-        
+        $pageTitle = ([
+            'titleHalaman' => 'Hypervolemia',
+            'subTitle' => 'Hypervolemia',
+            'activePage' => 'Create',
+        ]);
+
+        $pasien = Pasien::find($id);
+
+        return view('plan.hypervolemia.create', compact(['pageTitle', 'pasien']));
     }
 
     /**
@@ -33,7 +43,26 @@ class HypervolemiaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $request->validate([
+                'patient_id' => 'required|array',
+                'outcome_criteria' => 'required|array',
+                'action_plan' => 'required|array',
+            ]);
+
+            $outcome_criteria = implode(', ', $request->input('outcome_criteria'));
+            $action_plan = implode(', ', $request->input('action_plan'));
+
+            Hypervolemia::create([
+                'patient_id' => $request->patient_id,
+                'outcome_criteria' => $outcome_criteria,
+                'action_plan' => $action_plan,
+            ]);
+
+            return redirect()->route('pasien.plan.hypervolemia.index')->with('success', 'Data berhasil disimpan');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'Data gagal disimpan');
+        }
     }
 
     /**

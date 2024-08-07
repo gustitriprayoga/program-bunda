@@ -19,10 +19,10 @@ class PasienController extends Controller
             'activePage' => 'Data',
         ]);
 
+        
         $pasiens = Pasien::all();
-        $pasiensPlan = PasienPlan::all();
 
-        return view('pasien.index', compact('pageTitle', 'pasiens', 'pasiensPlan'));
+        return view('pasien.index', compact('pageTitle', 'pasiens'));
     }
 
     /**

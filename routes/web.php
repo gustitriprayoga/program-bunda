@@ -92,3 +92,6 @@ Route::prefix('/patient-plan/Risk')->group(function () {
     Route::put('/update/{id}', [RiskController::class, 'update'])->name('pasien.plan.risk.update');
     Route::delete('/destroy/{id}', [RiskController::class, 'destroy'])->name('pasien.plan.risk.destroy');
 });
+
+// Acute Implementation
+
